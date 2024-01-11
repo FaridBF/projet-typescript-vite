@@ -1,8 +1,14 @@
-// export interface UserInterface {
-//   id: number;
-//   name: string;
-// }
+export interface UserInterface {
+  id: number;
+  name: string;
+  email: string;
+  bio: string;
+  images: {
+    profile: string;
+    banner: string;
+  };
+}
 
-interface faridou {
-  (salim: boolean): void;
+export interface AdminUserInterface extends UserInterface {
+  role: string[];
 }
